@@ -24,12 +24,12 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-24 sm:w-32 h-8 sm:h-10 flex items-center justify-center">
+            <div className="relative w-32 sm:w-40 h-10 sm:h-12 flex items-center justify-center">
               <Image
                 src="/microbiz-logo.png"
                 alt="MicroBiz Zimbabwe"
-                width={128}
-                height={40}
+                width={160}
+                height={48}
                 className="object-contain brightness-[1.3] contrast-[1.1] transition-all duration-300 group-hover:brightness-[1.5] group-hover:contrast-[1.2]"
                 priority={true}
               />

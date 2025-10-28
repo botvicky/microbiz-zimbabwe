@@ -10,12 +10,12 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center mb-4 group">
-              <div className="relative w-40 h-12 flex items-center justify-center">
+              <div className="relative w-48 h-14 flex items-center justify-center">
                 <Image
                   src="/microbiz-logo.png"
                   alt="MicroBiz Zimbabwe"
-                  width={160}
-                  height={48}
+                  width={192}
+                  height={56}
                   className="object-contain brightness-[1.3] contrast-[1.1] transition-all duration-300 group-hover:brightness-[1.5] group-hover:contrast-[1.2]"
                 />
               </div>
