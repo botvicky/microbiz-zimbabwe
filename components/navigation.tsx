@@ -30,7 +30,7 @@ export function Navigation() {
                 alt="MicroBiz Zimbabwe"
                 width={128}
                 height={40}
-                className="object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+                className="object-contain"
                 priority={true}
               />
             </div>

@@ -16,7 +16,7 @@ export function Footer() {
                   alt="MicroBiz Zimbabwe"
                   width={160}
                   height={48}
-                  className="object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+                  className="object-contain"
                 />
               </div>
             </Link>
