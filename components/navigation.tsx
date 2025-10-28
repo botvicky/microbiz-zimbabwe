@@ -24,7 +24,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-32 h-10 flex items-center justify-center">
+            <div className="relative w-24 sm:w-32 h-8 sm:h-10 flex items-center justify-center">
               <Image
                 src="/microbiz-logo.png"
                 alt="MicroBiz Zimbabwe"

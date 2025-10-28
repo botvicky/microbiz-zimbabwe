@@ -52,18 +52,28 @@ export function AIChatButton() {
       {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue hover:glow-orange transition-all duration-300 shadow-lg"
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue hover:glow-orange transition-all duration-300 shadow-lg"
+        aria-label="Open chat"
       >
         {isOpen ? <X className="w-6 h-6 text-white" /> : <MessageCircle className="w-6 h-6 text-white" />}
       </button>
 
       {/* Chat Window */}
       {isOpen && (
-        <Card className="fixed bottom-24 right-6 z-50 w-96 h-[500px] flex flex-col shadow-2xl border-border bg-card">
+        <Card className="fixed inset-x-0 bottom-0 md:inset-auto md:bottom-24 md:right-6 z-50 w-full md:w-96 h-[85vh] md:h-[500px] flex flex-col shadow-2xl border-border bg-card md:rounded-lg rounded-t-lg">
           {/* Header */}
-          <div className="p-4 border-b border-border bg-gradient-to-r from-primary/20 to-secondary/20">
-            <h3 className="font-semibold text-foreground">MicroBiz AI Assistant</h3>
-            <p className="text-xs text-muted-foreground">Ask me anything about MicroBiz</p>
+          <div className="p-4 border-b border-border bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-between">
+            <div>
+              <h3 className="font-semibold text-foreground">MicroBiz AI Assistant</h3>
+              <p className="text-xs text-muted-foreground">Ask me anything about MicroBiz</p>
+            </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="md:hidden p-2 hover:bg-primary/10 rounded-full transition-colors"
+              aria-label="Close chat"
+            >
+              <X className="w-5 h-5 text-foreground" />
+            </button>
           </div>
 
           {/* Messages */}
