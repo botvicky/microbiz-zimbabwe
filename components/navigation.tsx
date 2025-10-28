@@ -25,12 +25,13 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-24 sm:w-32 h-8 sm:h-10 flex items-center justify-center">
+              <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
               <Image
                 src="/microbiz-logo.png"
                 alt="MicroBiz Zimbabwe"
                 width={128}
                 height={40}
-                className="object-contain"
+                className="object-contain relative z-10 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
                 priority={true}
               />
             </div>
