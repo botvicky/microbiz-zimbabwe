@@ -2,7 +2,8 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Zap } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function Navigation() {
@@ -22,13 +23,17 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue group-hover:glow-orange transition-all duration-300">
-              <Zap className="w-6 h-6 text-white" />
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-32 h-10 flex items-center justify-center">
+              <Image
+                src="/microbiz-logo.png"
+                alt="MicroBiz Zimbabwe"
+                width={128}
+                height={40}
+                className="object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+                priority={true}
+              />
             </div>
-            <span className="text-xl font-bold text-foreground">
-              MicroBiz <span className="text-primary">Zimbabwe</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

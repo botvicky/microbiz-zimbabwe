@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Zap, Facebook, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import Image from "next/image"
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -8,13 +9,16 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <Zap className="w-6 h-6 text-white" />
+            <Link href="/" className="flex items-center mb-4">
+              <div className="relative w-40 h-12 flex items-center justify-center">
+                <Image
+                  src="/microbiz-logo.png"
+                  alt="MicroBiz Zimbabwe"
+                  width={160}
+                  height={48}
+                  className="object-contain mix-blend-multiply dark:mix-blend-normal dark:invert"
+                />
               </div>
-              <span className="text-xl font-bold text-foreground">
-                MicroBiz <span className="text-primary">ZW</span>
-              </span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Empowering Zimbabwean entrepreneurs through innovative microfinancing solutions.
