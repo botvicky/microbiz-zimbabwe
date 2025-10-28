@@ -11,13 +11,12 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center mb-4">
               <div className="relative w-40 h-12 flex items-center justify-center">
-                <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
                 <Image
                   src="/microbiz-logo.png"
                   alt="MicroBiz Zimbabwe"
                   width={160}
                   height={48}
-                  className="object-contain relative z-10 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]"
+                  className="object-contain"
                 />
               </div>
             </Link>
