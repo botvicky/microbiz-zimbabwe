@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Rocket, TrendingUp, Users, Zap, ArrowRight } from "lucide-react"
@@ -45,49 +46,112 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-20 px-4 relative">
+      {/* Ngwavha like others - Hustles Showcase */}
+      <section className="py-20 px-4 relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="p-6 bg-card/50 backdrop-blur border-border hover:border-secondary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center mb-4 group-hover:glow-blue transition-all">
-                <Rocket className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Futuristic Strategies</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                We craft smart, innovative strategies designed to keep your business ahead of the curve.
-              </p>
-            </Card>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            Ngwavha <span className="text-primary">like others!!!</span>
+          </h2>
 
-            <Card className="p-6 bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 group-hover:glow-orange transition-all">
-                <Users className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Trusted Expertise</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                With years of experience, we've partnered with 150+ businesses to deliver impactful results.
-              </p>
-            </Card>
-
-            <Card className="p-6 bg-card/50 backdrop-blur border-border hover:border-secondary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center mb-4 group-hover:glow-blue transition-all">
-                <Zap className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Creative Excellence</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                From branding to user experience, we deliver creative solutions that captivate your audience.
-              </p>
-            </Card>
-
-            <Card className="p-6 bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4 group-hover:glow-orange transition-all">
-                <TrendingUp className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2 text-foreground">Scalable Growth</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                We help your business scale rapidly while maintaining sustainable growth in competitive markets.
-              </p>
-            </Card>
+          {/* Scrolling Hustles */}
+          <div className="relative">
+            <div className="flex gap-6 animate-scroll-right">
+              {[
+                {
+                  title: "Hair Barbering",
+                  description: "Professional hair cutting and styling services for the community.",
+                  image: "/hustles/hair-barbering.png",
+                },
+                {
+                  title: "Car Wash",
+                  description: "Mobile and stationary car cleaning services.",
+                  image: "/hustles/car-wash.png",
+                },
+                {
+                  title: "Tomato Farming",
+                  description: "Fresh tomato production for local markets.",
+                  image: "/hustles/tomato-farming.png",
+                },
+                {
+                  title: "Cabbage Farming",
+                  description: "Quality cabbage cultivation for retail and wholesale.",
+                  image: "/hustles/cabbage-farming.png",
+                },
+                {
+                  title: "Chicken Rearing",
+                  description: "Poultry farming for eggs and meat production.",
+                  image: "/hustles/chicken-rearing.png",
+                },
+                {
+                  title: "Construction",
+                  description: "Building and renovation services.",
+                  image: "/hustles/construction.png",
+                },
+                {
+                  title: "Food Truck",
+                  description: "Mobile food services and catering.",
+                  image: "/hustles/food-truck.png",
+                },
+              ]
+                .concat([
+                  {
+                    title: "Hair Barbering",
+                    description: "Professional hair cutting and styling services for the community.",
+                    image: "/hustles/hair-barbering.png",
+                  },
+                  {
+                    title: "Car Wash",
+                    description: "Mobile and stationary car cleaning services.",
+                    image: "/hustles/car-wash.png",
+                  },
+                  {
+                    title: "Tomato Farming",
+                    description: "Fresh tomato production for local markets.",
+                    image: "/hustles/tomato-farming.png",
+                  },
+                  {
+                    title: "Cabbage Farming",
+                    description: "Quality cabbage cultivation for retail and wholesale.",
+                    image: "/hustles/cabbage-farming.png",
+                  },
+                  {
+                    title: "Chicken Rearing",
+                    description: "Poultry farming for eggs and meat production.",
+                    image: "/hustles/chicken-rearing.png",
+                  },
+                  {
+                    title: "Construction",
+                    description: "Building and renovation services.",
+                    image: "/hustles/construction.png",
+                  },
+                  {
+                    title: "Food Truck",
+                    description: "Mobile food services and catering.",
+                    image: "/hustles/food-truck.png",
+                  },
+                ])
+                .map((hustle, index) => (
+                  <Card
+                    key={index}
+                    className="flex-shrink-0 w-[320px] bg-card/50 backdrop-blur border-none shadow-lg overflow-hidden group"
+                  >
+                    <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20">
+                      <Image
+                        src={hustle.image}
+                        alt={hustle.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
+                        {hustle.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{hustle.description}</p>
+                    </div>
+                  </Card>
+                ))}
+            </div>
           </div>
         </div>
       </section>
