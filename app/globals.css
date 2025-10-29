@@ -150,12 +150,26 @@
   .values-anim .value-item { will-change: transform, opacity; animation-delay: var(--delay, 0s); }
   .values-anim .value-item[data-dir="left"] { animation: slideLeftInOut 9s ease-in-out infinite; }
   .values-anim .value-item[data-dir="right"] { animation: slideRightInOut 9s ease-in-out infinite; }
+
+  /* Testimonials slider animations */
+  @keyframes scrollRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes scrollLeft {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  .animate-scroll-right { animation: scrollRight 30s linear infinite; }
+  .animate-scroll-left { animation: scrollLeft 30s linear infinite; }
 }
 
 /* Respect reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .animate-slide-left,
-  .animate-slide-right {
+  .animate-slide-right,
+  .animate-scroll-right,
+  .animate-scroll-left {
     animation: none !important;
   }
 }

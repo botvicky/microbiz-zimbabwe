@@ -20,73 +20,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="px-4 py-12">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold mb-8 text-foreground">
-            Client <span className="text-primary">Testimonials</span>
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                name: "Thandiwe Ncube",
-                business: "Thandie's Fashion Boutique",
-                quote:
-                  "MicroBiz gave me the capital I needed to turn my passion for fashion into a thriving business. Within 6 months, I've expanded to two locations!",
-              },
-              {
-                name: "Simba Mutasa",
-                business: "Simba's Transport Services",
-                quote:
-                  "The flexible repayment terms made it possible for me to invest in my first delivery van. Now I'm running a fleet of three vehicles!",
-              },
-              {
-                name: "Grace Moyo",
-                business: "Grace's Catering",
-                quote:
-                  "Not only did MicroBiz provide funding, but the business mentorship helped me develop a solid marketing strategy. My client base has tripled!",
-              },
-              {
-                name: "Tafadzwa Chikwanha",
-                business: "Tech Solutions ZW",
-                quote:
-                  "As a tech entrepreneur, I needed equipment and software. MicroBiz understood my needs and provided exactly what I needed to launch my consultancy.",
-              },
-              {
-                name: "Rudo Sibanda",
-                business: "Rudo's Beauty Salon",
-                quote:
-                  "The application process was so simple and fast. Within a week, I had the funds to open my dream salon. Thank you, MicroBiz!",
-              },
-              {
-                name: "Farai Ndlovu",
-                business: "Farai's Grocery Store",
-                quote:
-                  "MicroBiz believed in me when banks wouldn't. Now my store is the go-to place in my community. I'm forever grateful!",
-              },
-            ].map((testimonial, index) => (
-              <Card
-                key={index}
-                className="p-6 bg-card/50 backdrop-blur border-border hover:border-primary/50 transition-all"
-              >
-                <Quote className="w-8 h-8 text-primary mb-4" />
-                <p className="text-muted-foreground leading-relaxed mb-4 italic">"{testimonial.quote}"</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                    <Users className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.business}</p>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Past Events */}
       <section className="px-4 py-12">
         <div className="container mx-auto max-w-5xl">
@@ -172,6 +105,113 @@ export default function BlogPage() {
                 </div>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="px-4 py-12 overflow-hidden">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-3xl font-bold mb-8 text-foreground text-center">
+            Client <span className="text-primary">Testimonials</span>
+          </h2>
+
+          {/* Single Row - Scroll Left to Right */}
+          <div className="relative">
+            <div className="flex gap-6 animate-scroll-right">
+              {[
+                {
+                  name: "Thandiwe Ncube",
+                  business: "Thandie's Fashion Boutique",
+                  quote:
+                    "MicroBiz gave me the capital I needed to turn my passion for fashion into a thriving business. Within 6 months, I've expanded to two locations!",
+                },
+                {
+                  name: "Simba Mutasa",
+                  business: "Simba's Transport Services",
+                  quote:
+                    "The flexible repayment terms made it possible for me to invest in my first delivery van. Now I'm running a fleet of three vehicles!",
+                },
+                {
+                  name: "Grace Moyo",
+                  business: "Grace's Catering",
+                  quote:
+                    "Not only did MicroBiz provide funding, but the business mentorship helped me develop a solid marketing strategy. My client base has tripled!",
+                },
+                {
+                  name: "Tafadzwa Chikwanha",
+                  business: "Tech Solutions ZW",
+                  quote:
+                    "As a tech entrepreneur, I needed equipment and software. MicroBiz understood my needs and provided exactly what I needed to launch my consultancy.",
+                },
+                {
+                  name: "Rudo Sibanda",
+                  business: "Rudo's Beauty Salon",
+                  quote:
+                    "The application process was so simple and fast. Within a week, I had the funds to open my dream salon. Thank you, MicroBiz!",
+                },
+                {
+                  name: "Farai Ndlovu",
+                  business: "Farai's Grocery Store",
+                  quote:
+                    "MicroBiz believed in me when banks wouldn't. Now my store is the go-to place in my community. I'm forever grateful!",
+                },
+              ].concat([
+                {
+                  name: "Thandiwe Ncube",
+                  business: "Thandie's Fashion Boutique",
+                  quote:
+                    "MicroBiz gave me the capital I needed to turn my passion for fashion into a thriving business. Within 6 months, I've expanded to two locations!",
+                },
+                {
+                  name: "Simba Mutasa",
+                  business: "Simba's Transport Services",
+                  quote:
+                    "The flexible repayment terms made it possible for me to invest in my first delivery van. Now I'm running a fleet of three vehicles!",
+                },
+                {
+                  name: "Grace Moyo",
+                  business: "Grace's Catering",
+                  quote:
+                    "Not only did MicroBiz provide funding, but the business mentorship helped me develop a solid marketing strategy. My client base has tripled!",
+                },
+                {
+                  name: "Tafadzwa Chikwanha",
+                  business: "Tech Solutions ZW",
+                  quote:
+                    "As a tech entrepreneur, I needed equipment and software. MicroBiz understood my needs and provided exactly what I needed to launch my consultancy.",
+                },
+                {
+                  name: "Rudo Sibanda",
+                  business: "Rudo's Beauty Salon",
+                  quote:
+                    "The application process was so simple and fast. Within a week, I had the funds to open my dream salon. Thank you, MicroBiz!",
+                },
+                {
+                  name: "Farai Ndlovu",
+                  business: "Farai's Grocery Store",
+                  quote:
+                    "MicroBiz believed in me when banks wouldn't. Now my store is the go-to place in my community. I'm forever grateful!",
+                },
+              ]).map((testimonial, index) => (
+                <Card
+                  key={index}
+                  className="flex-shrink-0 w-[400px] p-6 bg-card/50 backdrop-blur border-none shadow-lg"
+                >
+                  <Quote className="w-8 h-8 text-primary mb-4" />
+                  <p className="text-muted-foreground leading-relaxed mb-4 italic text-sm">"{testimonial.quote}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.business}</p>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
