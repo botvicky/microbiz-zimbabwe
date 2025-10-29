@@ -93,7 +93,7 @@ export default function ProductsPage() {
         <div className="container mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold text-balance">
-              MicroBiz <span className="text-secondary text-glow-blue">Starter Packs</span>
+              Business   <span className="text-secondary text-glow-blue">Starter Pack Catalogue</span>
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
               Choose the perfect financing package for your business type. Each pack is tailored to provide exactly what

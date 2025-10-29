@@ -1,19 +1,43 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { MessageCircle, X, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 
 export function AIChatButton() {
+  const [footerVisible, setFooterVisible] = useState(false)
+  const footerRef = useRef<HTMLElement | null>(null)
+  // Detect if footer is visible
+  useEffect(() => {
+    const footerEl = document.querySelector("footer")
+    if (!footerEl) return
+    footerRef.current = footerEl as HTMLElement
+    const observer = new window.IntersectionObserver(
+      ([entry]) => {
+        setFooterVisible(entry.isIntersecting)
+      },
+      { threshold: 0.01 }
+    )
+    observer.observe(footerEl)
+    return () => observer.disconnect()
+  }, [])
+
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Array<{ role: "user" | "assistant"; content: string }>>([
     {
       role: "assistant",
-      content: "Hello! I'm here to help you learn about MicroBiz Zimbabwe. How can I assist you today?",
+      content: "Hi! I am Adala. How may I help you today?",
     },
   ])
+  const messagesEndRef = useRef<HTMLDivElement>(null)
+  // Scroll to bottom when messages change
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [messages, isOpen])
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
@@ -49,14 +73,21 @@ export function AIChatButton() {
 
   return (
     <>
-      {/* Chat Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue hover:glow-orange transition-all duration-300 shadow-lg"
-        aria-label="Open chat"
-      >
-        {isOpen ? <X className="w-6 h-6 text-white" /> : <MessageCircle className="w-6 h-6 text-white" />}
-      </button>
+      {/* Chat Button with Always-visible Floating Text, hidden if footer is visible */}
+      {!footerVisible && (
+        <div className="fixed bottom-4 right-8 md:bottom-6 md:right-12 z-50 flex flex-col items-center">
+          <div className="mb-2 px-3 py-1.5 bg-gradient-to-r from-primary to-secondary text-white text-xs font-medium rounded-lg shadow-lg whitespace-nowrap">
+            Ask Adala
+          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue hover:glow-orange transition-all duration-300 shadow-lg"
+            aria-label="Open chat"
+          >
+            {isOpen ? <X className="w-6 h-6 text-white" /> : <MessageCircle className="w-6 h-6 text-white" />}
+          </button>
+        </div>
+      )}
 
       {/* Chat Window */}
       {isOpen && (
@@ -64,8 +95,8 @@ export function AIChatButton() {
           {/* Header */}
           <div className="p-4 border-b border-border bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-between">
             <div>
-              <h3 className="font-semibold text-foreground">MicroBiz AI Assistant</h3>
-              <p className="text-xs text-muted-foreground">Ask me anything about MicroBiz</p>
+              <h3 className="font-semibold text-foreground">Adala - AI Assistant</h3>
+              <p className="text-xs text-muted-foreground">Ask Adala anything MicroBiz</p>
             </div>
             <button
               onClick={() => setIsOpen(false)}
@@ -96,6 +127,7 @@ export function AIChatButton() {
                 </div>
               </div>
             )}
+            <div ref={messagesEndRef} />
           </div>
 
           {/* Input */}

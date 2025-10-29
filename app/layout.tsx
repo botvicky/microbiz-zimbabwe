@@ -7,6 +7,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { CookieBanner } from "@/components/cookie-banner"
 import { AIChatButton } from "@/components/ai-chat-button"
+import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -24,14 +26,22 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        <Navigation />
-        {children}
-        <Footer />
-        <CookieBanner />
-        <AIChatButton />
-        <Analytics />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navigation />
+          {children}
+          <Footer />
+          <CookieBanner />
+          <AIChatButton />
+          <ThemeToggle />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   )
