@@ -92,35 +92,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-secondary/20 to-transparent blur-2xl" />
-
-        <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue mb-6">
-              <Zap className="w-10 h-10 text-white" />
-            </div>
-
-            <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              Let's Launch Your Business <span className="text-secondary text-glow-blue">Into a New Orbit</span>
-            </h2>
-
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Partner with us to build futuristic strategies, unlock growth, and take your business light-years ahead of
-              the competition.
-            </p>
-
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 mt-6">
-              <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Get Started <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* How to Get Started */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
