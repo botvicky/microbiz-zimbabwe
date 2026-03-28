@@ -11,13 +11,13 @@ export function Navigation() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/what-we-do", label: "What We Do" },
-    { href: "/products", label: "Products" },
-    { href: "/about", label: "About Us" },
+    { href: "/what-we-do", label: "Small Business Projects" },
+    { href: "/products", label: "Business Boaster Packages" },
+    { href: "/about", label: "Mission & Values" },
     { href: "/whats-new", label: "What's New" },
     { href: "/blog", label: "Blog" },
     { href: "/faq", label: "FAQ" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/contact", label: "Contact Details" },
   ]
 
   return (
@@ -51,7 +51,7 @@ export function Navigation() {
             ))}
             <Button asChild className="bg-primary hover:bg-primary/90 text-white">
               <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Apply Now
+                Credit Application
               </a>
             </Button>
           </div>
@@ -77,7 +77,7 @@ export function Navigation() {
             ))}
             <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
               <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Apply Now
+                Credit Application
               </a>
             </Button>
           </div>

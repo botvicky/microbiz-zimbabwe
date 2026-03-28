@@ -72,7 +72,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  About Us
+                  Mission & Values
                 </Link>
               </li>
               <li>
@@ -80,7 +80,7 @@ export function Footer() {
                   href="/products"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Products
+                  Business Boaster Packages
                 </Link>
               </li>
               <li>
@@ -105,7 +105,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Contact Us
+                  Contact Details
                 </Link>
               </li>
               <li>
@@ -115,7 +115,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Apply Now
+                  Credit Application
                 </a>
               </li>
             </ul>

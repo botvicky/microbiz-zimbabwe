@@ -61,8 +61,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              We help you start your own small business and go beyond limits by providing innovative  solutions, futuristic
-              strategies, and measurable results that make you live life on your terms
+              Microbiz Zimbabwe is the fastest growing revolution that is transforming the lives of ordinary people to become super charged business people on a micro level.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -79,6 +78,12 @@ export default function HomePage() {
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
+              </div>
+
+              <div className="pt-8 border-t border-border/50">
+                <p className="text-muted-foreground italic leading-relaxed">
+                  "It is the place where dreams and aspirations are given a breath of life. For several years Microbiz has helped countless previously marginalized individuals to find their footing and start earning a decent income."
+                </p>
               </div>
 
               {/* Social Media Links */}
@@ -174,6 +179,114 @@ export default function HomePage() {
                 <div className="absolute bottom-2 left-2 right-2">
                   <p className="text-white font-semibold text-sm">Agriculture</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AIM Section */}
+      <section className="py-20 px-4 bg-card/30 backdrop-blur-sm border-y border-border/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Our <span className="text-secondary text-glow-blue">AIM</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              The goal of Microbiz is to create small business owners through a comprehensive support system.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Zap className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Business Equipment</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Giving Business Equipment and or raw materials offered through starter kits to get you started immediately.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Users className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Practical Training</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Two-prong entrepreneurship training by mentors and business financial literacy certified by Chinhoyi University of Technology.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <TrendingUp className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Access to Credit</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Options of zero deposit fully funded and deposit paid (partially funded) credit to suit your financial situation.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Rocket className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Monitoring & Evaluation</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                After-sales service with monthly site visits for the first 3 months to ensure business continuity and longevity.
+              </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What's New Concept Section */}
+      <section className="py-20 px-4 overflow-hidden relative">
+        <div className="absolute top-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+                What's New About <br />
+                <span className="text-primary text-glow-orange">The Concept</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                The concept is refreshingly innovative and gives individual personalized service. It has a 3-tier approach combining to form a robust business plan.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">1</div>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Equipment suppliers</span> simply supply goods and leave the client to figure it out.</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">2</div>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Business consultancy</span> simply provides advice and leaves the client to figure it out.</p>
+                </div>
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">3</div>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Banks and microfinanciers</span> simply lend money and leave the client to figure it out.</p>
+                </div>
+                <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 mt-8">
+                  <p className="text-xl font-bold text-foreground">
+                    <span className="text-primary">Microbiz</span> is a pioneer in the industry by combining all the three to become a <span className="text-glow-orange">1-stop shop!</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-border/50">
+              <Image 
+                src="/adala.png" 
+                alt="Microbiz 1-Stop Shop"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-8 left-8 right-8 text-white">
+                <p className="text-2xl font-bold mb-2">The 1-Stop Shop Revolution</p>
+                <p className="opacity-80">Empowering you with everything you need to succeed.</p>
               </div>
             </div>
           </div>

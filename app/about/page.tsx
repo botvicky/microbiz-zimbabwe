@@ -203,8 +203,7 @@ export default function AboutPage() {
               <h3 className="text-3xl font-bold text-foreground">Our Mission</h3>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Unlocking entrepreneurial potential by delivering accessible resources, expert mentorship, and
-              cutting-edge financing solutions, driving business growth and economic prosperity.
+              To empower aspiring and existing entrepreneurs in Zimbabwe by providing access to resources, mentorship and innovative credit solutions so as to foster economic growth.
             </p>
           </div>
 
@@ -215,8 +214,7 @@ export default function AboutPage() {
               <h3 className="text-3xl font-bold text-foreground">Our Vision</h3>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To be destiny transmutation architects and enablers of legacy building in the micro entrepreneurship
-              ecosystem.
+              To become a leading force in unlocking human potential in the entrepreneurship ecosystem and create sustainable employment and enduring prosperity.
             </p>
           </div>
         </div>

@@ -11,10 +11,10 @@ export default function WhatWeDoPage() {
         
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              What <span className="text-primary">We Do</span>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
+              Small Business <span className="text-primary">Projects</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
               We help people become small business owners through starter packs and five key enablers
             </p>
           </div>

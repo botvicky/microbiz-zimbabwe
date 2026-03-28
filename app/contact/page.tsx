@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="container mx-auto relative z-10">
           <div className="text-center max-w-3xl mx-auto space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold text-balance">
-              Get in <span className="text-primary text-glow-orange">Touch</span>
+              Contact <span className="text-primary text-glow-orange">Details</span>
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
               Have questions? We're here to help you start your entrepreneurial journey
