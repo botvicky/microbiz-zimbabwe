@@ -108,7 +108,7 @@ export default function AboutPage() {
               become producers of in-demand goods or services — <span className="font-semibold text-foreground">"Zviri kuitisa mari"</span> / <span className="font-semibold text-foreground">"Iziku yenzesa mali"</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed text-center">
-              Over the years, MicroBiz has helped many previously marginalised people start and grow sustainable
+              Over the years, MicroBiz has helped many previously marginalized people start and grow sustainable
               incomes — all under one roof.
             </p>
           </div>

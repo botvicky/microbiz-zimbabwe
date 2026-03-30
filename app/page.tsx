@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card"
 import { Rocket, TrendingUp, Users, Zap, ArrowRight } from "lucide-react"
 
 function AnimatedText() {
-  const words = ["Ngwavha  ", "Spina", "Hustle"]
+  const words = ["Ngwavha", "Spina", "Hustle"]
   const [currentIndex, setCurrentIndex] = React.useState(0)
 
   React.useEffect(() => {
@@ -204,7 +204,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Business Equipment</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Giving Business Equipment and or raw materials offered through starter kits to get you started immediately.
+                Giving Business Equipment and/or raw materials offered through starter kits to get you started immediately.
               </p>
             </Card>
 

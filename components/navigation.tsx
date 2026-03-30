@@ -12,7 +12,7 @@ export function Navigation() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/what-we-do", label: "Small Business Projects" },
-    { href: "/products", label: "Business Boaster Packages" },
+    { href: "/products", label: "Business Booster Packages" },
     { href: "/about", label: "Mission & Values" },
     { href: "/whats-new", label: "What's New" },
     { href: "/blog", label: "Blog" },
