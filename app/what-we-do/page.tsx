@@ -138,27 +138,62 @@ export default function WhatWeDoPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-secondary/20 to-transparent blur-2xl" />
-
-        <div className="container mx-auto relative z-10">
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center glow-blue mb-6">
-              <Zap className="w-10 h-10 text-white" />
-            </div>
-
-            <h2 className="text-4xl md:text-5xl font-bold text-balance">
-              Let's Launch Your Business <span className="text-secondary text-glow-blue">Into a New Day</span>
+      {/* Our AIM Section */}
+      <section className="py-20 px-4 bg-card/30 backdrop-blur-sm border-t border-border/50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Our <span className="text-secondary text-glow-blue">AIM</span>
             </h2>
-
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Partner with us to build futuristic strategies, unlock growth, and take your business light-years ahead of
-              the competition.
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              The goal of Microbiz is to firstly and foremost create small business owners through the provision of the following:
             </p>
+          </div>
 
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8 mt-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Briefcase className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Business Equipment</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Giving Business Equipment and/or raw materials offered through starter kits to get you started immediately.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <GraduationCap className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Practical Training</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Two-prong entrepreneurship training, firstly by mentors already running similar businesses and secondly by business financial literacy certified by Chinhoyi University of Technology School of Business and Entrepreneurship department.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <CreditCard className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Access to Credit</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Options of zero deposit fully funded and deposit paid (partially funded credit) to suit your financial situation.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <BarChart3 className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Monitoring & Evaluation</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                After-sales service program where we conduct monthly site visits for the first 3 months to ensure teething problems are resolved early, ensuring business continuity and longevity.
+              </p>
+            </Card>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8">
               <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
                 Get Started <ArrowRight className="ml-2 w-5 h-5" />
               </a>

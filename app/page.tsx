@@ -193,7 +193,7 @@ export default function HomePage() {
               Our <span className="text-secondary text-glow-blue">AIM</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              The goal of Microbiz is to create small business owners through a comprehensive support system.
+              The goal of Microbiz is to firstly and foremost create small business owners through the provision of the following:
             </p>
           </div>
 
@@ -214,7 +214,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Practical Training</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Two-prong entrepreneurship training by mentors and business financial literacy certified by Chinhoyi University of Technology.
+                Two-prong entrepreneurship training, firstly by mentors already running similar businesses and secondly by business financial literacy certified by Chinhoyi University of Technology School of Business and Entrepreneurship department.
               </p>
             </Card>
 
@@ -224,7 +224,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Access to Credit</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Options of zero deposit fully funded and deposit paid (partially funded) credit to suit your financial situation.
+                Options of zero deposit fully funded and deposit paid (partially funded credit) to suit your financial situation.
               </p>
             </Card>
 
@@ -234,7 +234,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold mb-4">Monitoring & Evaluation</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                After-sales service with monthly site visits for the first 3 months to ensure business continuity and longevity.
+                After-sales service program where we conduct monthly site visits for the first 3 months to ensure teething problems are resolved early, ensuring business continuity and longevity.
               </p>
             </Card>
           </div>
@@ -438,50 +438,21 @@ export default function HomePage() {
         </div>
       </section>
 
-{/* Stats Section */}
+{/* Our Philosophy Section (Replacing Stats) */}
   <section className="py-20 px-4 bg-gradient-to-b from-secondary/5 to-transparent">
     <div className="container mx-auto">
       <div className="text-center mb-12">
-    <h2 className="text-4xl md:text-5xl font-bold mb-4">
-      Our <span className="text-primary">Impact</span>
-    </h2>
-    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-      Real numbers that showcase our commitment to empowering entrepreneurs
-    </p>
-      </div>
-
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-    <Card className="p-8 text-center bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 group">
-      <div className="mb-4 flex justify-center">
-        <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-      <Users className="w-8 h-8 text-primary" />
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+          Our <span className="text-primary">Philosophy</span>
+        </h2>
+        <div className="max-w-4xl mx-auto space-y-6">
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            Microbiz Zimbabwe is the fastest growing revolution that is transforming the lives of ordinary people to become supercharged business people on a micro level to individuals and giving expansion to existing business. The program is guaranteed to tackle unemployment and/or supplement incomes, for those who consider themselves insufficiently remunerated.
+          </p>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            It is the place where dreams and aspirations are given a breath of life. For several years Microbiz has helped countless number of previously marginalized individuals to find their footing and start earning a decent income. We are eradicating poverty one micro business at a time, shifting people’s mindsets from being mere consumers (of goods and services) to producers in one form or the other.
+          </p>
         </div>
-      </div>
-      <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-        {409 + Math.floor((new Date().getTime() - new Date('2025-11-06').getTime()) / (1000 * 60 * 60 * 24)) * 17}
-      </div>
-      <p className="text-muted-foreground font-medium">Website Visitors</p>
-    </Card>
-
-    <Card className="p-8 text-center bg-card/50 backdrop-blur border-border/50 hover:border-secondary/50 transition-all duration-300 group">
-      <div className="mb-4 flex justify-center">
-        <div className="p-4 rounded-full bg-secondary/10 group-hover:bg-secondary/20 transition-colors">
-      <TrendingUp className="w-8 h-8 text-secondary" />
-        </div>
-      </div>
-      <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">92%</div>
-      <p className="text-muted-foreground font-medium">Success Rate</p>
-    </Card>
-
-    <Card className="p-8 text-center bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 group">
-      <div className="mb-4 flex justify-center">
-        <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-      <Rocket className="w-8 h-8 text-primary" />
-        </div>
-      </div>
-      <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">17+</div>
-      <p className="text-muted-foreground font-medium">Funded Clients</p>
-    </Card>
       </div>
     </div>
   </section>
