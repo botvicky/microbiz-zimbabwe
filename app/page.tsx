@@ -61,7 +61,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Microbiz Zimbabwe is the fastest growing revolution that is transforming the lives of ordinary people to become super charged business people on a micro level.
+              Microbiz Zimbabwe is the fastest growing revolution that is transforming the lives of ordinary people to become supercharged business people on a micro level to individuals and giving expansion to existing business. The program is guaranteed to tackle unemployment and/or supplement incomes, for those who consider themselves insufficiently remunerated.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -82,7 +82,7 @@ export default function HomePage() {
 
               <div className="pt-8 border-t border-border/50">
                 <p className="text-muted-foreground italic leading-relaxed">
-                  "It is the place where dreams and aspirations are given a breath of life. For several years Microbiz has helped countless previously marginalized individuals to find their footing and start earning a decent income."
+                  "It is the place where dreams and aspirations are given a breath of life. For several years Microbiz has helped countless number of previously marginalized individuals to find their footing and start earning a decent income. We are eradicating poverty one micro business at a time, shifting people’s mindsets from being mere consumers (of goods and services) to producers in one form or the other."
                 </p>
               </div>
 
@@ -252,25 +252,25 @@ export default function HomePage() {
                 <span className="text-primary text-glow-orange">The Concept</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                The concept is refreshingly innovative and gives individual personalized service. It has a 3-tier approach combining to form a robust business plan.
+                The concept is refreshingly innovative and gives individual personalized service. It has a 3-tier approach combining to form a robust business plan because of the following reasons.
               </p>
               
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">1</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Equipment suppliers</span> simply supply goods and leave the client to figure it out.</p>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Equipment suppliers</span> simply supply goods and leave the client to figure out the process by themselves.</p>
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">2</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Business consultancy</span> simply provides advice and leaves the client to figure it out.</p>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Business consultancy</span> simply to entrepreneurship and leave the client to figure out the process by themselves.</p>
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">3</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Banks and microfinanciers</span> simply lend money and leave the client to figure it out.</p>
+                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Banks and microfinanciers</span> simply lend money and leave the client to figure out the process by themselves.</p>
                 </div>
                 <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 mt-8">
                   <p className="text-xl font-bold text-foreground">
-                    <span className="text-primary">Microbiz</span> is a pioneer in the industry by combining all the three to become a <span className="text-glow-orange">1-stop shop!</span>
+                    <span className="text-primary">Microbiz</span> is a pioneer in the industry by combining all the three to become <span className="text-glow-orange">1-stop shop!</span>
                   </p>
                 </div>
               </div>
