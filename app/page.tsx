@@ -5,7 +5,7 @@ import Image from "next/image"
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Rocket, TrendingUp, Users, Zap, ArrowRight } from "lucide-react"
+import { Rocket, TrendingUp, Users, Zap, ArrowRight, Landmark, Briefcase, ShoppingCart } from "lucide-react"
 
 function AnimatedText() {
   const words = ["Ngwavha", "Spina", "Hustle"]
@@ -242,51 +242,63 @@ export default function HomePage() {
       </section>
 
       {/* What's New Concept Section */}
-      <section className="py-20 px-4 overflow-hidden relative">
-        <div className="absolute top-1/2 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+      <section className="py-24 px-4 overflow-hidden relative">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10" />
+        
         <div className="container mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8">
-                What's New About <br />
-                <span className="text-primary text-glow-orange">The Concept</span>
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                The concept is refreshingly innovative and gives individual personalized service. It has a 3-tier approach combining to form a robust business plan because of the following reasons.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">1</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Equipment suppliers</span> simply supply goods and leave the client to figure out the process by themselves.</p>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">2</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Business consultancy</span> simply to entrepreneurship and leave the client to figure out the process by themselves.</p>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">3</div>
-                  <p className="text-muted-foreground"><span className="text-foreground font-semibold">Banks and microfinanciers</span> simply lend money and leave the client to figure out the process by themselves.</p>
-                </div>
-                <div className="p-6 rounded-2xl bg-primary/10 border border-primary/20 mt-8">
-                  <p className="text-xl font-bold text-foreground">
-                    <span className="text-primary">Microbiz</span> is a pioneer in the industry by combining all the three to become <span className="text-glow-orange">1-stop shop!</span>
-                  </p>
-                </div>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold mb-8">
+              What's New About <br />
+              <span className="text-primary text-glow-orange font-serif">The Concept</span>
+            </h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              The concept is refreshingly innovative and gives individual personalized service. It has a 3-tier approach combining to form a robust business plan.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <ShoppingCart className="w-8 h-8 text-secondary" />
               </div>
-            </div>
-            
-            <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-border/50">
-              <Image 
-                src="/adala.png" 
-                alt="Microbiz 1-Stop Shop"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8 text-white">
-                <p className="text-2xl font-bold mb-2">The 1-Stop Shop Revolution</p>
-                <p className="opacity-80">Empowering you with everything you need to succeed.</p>
+              <h3 className="text-xl font-bold mb-4">Equipment Suppliers</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Traditional suppliers simply provide goods and leave you to figure out the business process alone.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Briefcase className="w-8 h-8 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Business Consultancy</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Typical consultancies offer advice on entrepreneurship but often lack the resources to get you started.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Landmark className="w-8 h-8 text-secondary" />
+              </div>
+              <h3 className="text-xl font-bold mb-4">Banks & Microfinanciers</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Standard lenders provide capital but rarely offer the training or tools needed for business success.
+              </p>
+            </Card>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/5 to-secondary/10 border border-primary/20 text-center shadow-xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+              <div className="relative z-10">
+                <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  <span className="text-primary text-glow-orange">Microbiz</span> is a pioneer in the industry
+                </p>
+                <p className="text-xl md:text-2xl text-muted-foreground italic">
+                  We combine all three enablers to become Zimbabwe's premier <br className="hidden md:block" />
+                  <span className="text-foreground font-bold not-italic text-glow-blue border-b-2 border-secondary/50 pb-1">1-Stop Shop!</span>
+                </p>
               </div>
             </div>
           </div>
