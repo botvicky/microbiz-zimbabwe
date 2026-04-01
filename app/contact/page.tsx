@@ -157,7 +157,7 @@ export default function ContactPage() {
               reality.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8">
-              <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
                 Apply Now
               </a>
             </Button>

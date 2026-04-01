@@ -194,8 +194,8 @@ export default function WhatWeDoPage() {
           
           <div className="mt-16 text-center">
             <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white text-lg px-8">
-              <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Get Started <ArrowRight className="ml-2 w-5 h-5" />
+              <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
+                Apply Now <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
           </div>

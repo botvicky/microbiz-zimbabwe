@@ -50,8 +50,8 @@ export function Navigation() {
               </Link>
             ))}
             <Button asChild className="bg-primary hover:bg-primary/90 text-white">
-              <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Credit Application
+              <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
+                Apply Now
               </a>
             </Button>
           </div>
@@ -76,8 +76,8 @@ export function Navigation() {
               </Link>
             ))}
             <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white">
-              <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Credit Application
+              <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
+                Apply Now
               </a>
             </Button>
           </div>

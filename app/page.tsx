@@ -66,8 +66,8 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-8 shadow-lg">
-                <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
-                Get Started <ArrowRight className="ml-2 w-5 h-5" />
+                <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
+                Apply Now <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
               <Button

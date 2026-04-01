@@ -110,12 +110,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://bancosystem.co.zw"
+                  href="https://wa.me/263773988988?text=Hi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Credit Application
+                  Apply Now
                 </a>
               </li>
             </ul>

@@ -92,12 +92,12 @@ export default function ProductsPage() {
                 {/* Buttons */}
                 <div className="p-6 space-y-3">
                   <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white text-lg py-6">
-                    <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
                       Apply on credit now <ArrowRight className="ml-2 w-5 h-5" />
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="w-full text-lg py-6">
-                    <a href="https://bancosystem.co.zw" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
                       Buy with cash now <ArrowRight className="ml-2 w-5 h-5" />
                     </a>
                   </Button>

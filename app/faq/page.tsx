@@ -144,9 +144,9 @@ export default function FAQPage() {
                 How can I get started with your services?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed">
-                Simply click the "Apply Now" button to visit our application portal at bancosystem.co.zw. Fill out the
+                Simply click the "Apply Now" button to chat with our WhatsApp chatbot at +263773988988. Fill out the
                 application form with your business details, and our team will review your submission within 3-5
-                business days. You can also chat with Adala, our AI assistant, for instant answers to your questions.
+                business days.
               </AccordionContent>
             </AccordionItem>
 
