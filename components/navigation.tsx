@@ -21,8 +21,8 @@ export function Navigation() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/what-we-do", label: "Small Business Projects" },
-    { href: "/homeware", label: "Homeware furniture and electronics" },
-    { href: "/products", label: "Business Booster Packages" },
+    { href: "/homeware", label: "Homeware & Electronics" },
+    { href: "/products", label: "Booster Packages" },
     { href: "/contact", label: "Contact Details" },
   ]
 
@@ -54,13 +54,13 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors relative py-1",
+                  "text-[13px] font-medium transition-colors relative py-1 whitespace-nowrap",
                   isActive(link.href) ? "text-foreground" : "text-muted-foreground hover:text-foreground",
                 )}
               >
@@ -74,7 +74,7 @@ export function Navigation() {
             {/* About Us Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className={cn(
-                "flex items-center gap-1 text-sm font-medium transition-colors outline-none",
+                "flex items-center gap-1 text-[13px] font-medium transition-colors outline-none whitespace-nowrap",
                 aboutLinks.some(link => isActive(link.href)) ? "text-foreground" : "text-muted-foreground hover:text-foreground"
               )}>
                 About Us <ChevronDown className="w-4 h-4" />
