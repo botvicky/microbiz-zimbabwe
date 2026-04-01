@@ -231,21 +231,6 @@ export default function HomePage() {
               </p>
             </Card>
           </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary/20 via-primary/5 to-secondary/10 border border-primary/20 text-center shadow-xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-              <div className="relative z-10">
-                <p className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                  <span className="text-primary text-glow-orange">Microbiz</span> is a pioneer in the industry
-                </p>
-                <p className="text-xl md:text-2xl text-muted-foreground italic">
-                  We combine all three enablers to become Zimbabwe's premier <br className="hidden md:block" />
-                  <span className="text-foreground font-bold not-italic text-glow-blue border-b-2 border-secondary/50 pb-1">1-Stop Shop!</span>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
