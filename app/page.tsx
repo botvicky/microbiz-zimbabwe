@@ -450,67 +450,6 @@ export default function HomePage() {
         </div>
       </section>
 
-{/* Our Philosophy Section (Replacing Stats) */}
-  <section className="py-20 px-4 bg-gradient-to-b from-secondary/5 to-transparent">
-    <div className="container mx-auto">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
-          Our <span className="text-primary">Philosophy</span>
-        </h2>
-        <div className="max-w-4xl mx-auto space-y-6">
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Microbiz Zimbabwe is the fastest growing revolution that is transforming the lives of ordinary people to become supercharged business people on a micro level to individuals and giving expansion to existing business. The program is guaranteed to tackle unemployment and/or supplement incomes, for those who consider themselves insufficiently remunerated.
-          </p>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            It is the place where dreams and aspirations are given a breath of life. For several years Microbiz has helped countless number of previously marginalized individuals to find their footing and start earning a decent income. We are eradicating poverty one micro business at a time, shifting people’s mindsets from being mere consumers (of goods and services) to producers in one form or the other.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {/* How to Get Started */}
-      {/*<section className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              How to <span className="text-primary">Get Started</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Starting your journey with MicroBiz is simple and straightforward
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                step: "01",
-                title: "Browse Our Products",
-                description: "Explore our range of microfinancing solutions tailored for different business needs.",
-              },
-              {
-                step: "02",
-                title: "Submit Your Application",
-                description: "Fill out a simple application form on our partner portal with your business details.",
-              },
-              {
-                step: "03",
-                title: "Get Funded & Grow",
-                description: "Once approved, receive your funding and start building your dream business.",
-              },
-            ].map((item, index) => (
-              <div key={index} className="relative">
-                <div className="text-6xl font-bold text-secondary/20 mb-4">{item.step}</div>
-                <h3 className="text-xl font-semibold mb-2 text-foreground">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                {index < 2 && (
-                  <ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-secondary/30" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>*/}
     </div>
   )
 }
