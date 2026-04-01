@@ -22,7 +22,7 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/what-we-do", label: "Small Business Projects" },
     { href: "/homeware", label: "Homeware & Electronics" },
-    { href: "/products", label: "Booster Packages" },
+    { href: "/products", label: "Business Booster Packages" },
     { href: "/contact", label: "Contact Details" },
   ]
 
