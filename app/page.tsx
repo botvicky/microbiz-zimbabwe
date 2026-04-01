@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card"
 import { Rocket, TrendingUp, Users, Zap, ArrowRight, Landmark, Briefcase, ShoppingCart } from "lucide-react"
 
 function AnimatedText() {
-  const words = ["Ngwavha", "Spina", "Hustle"]
+  const words = ["Ngwavha", "Spana", "Hustle"]
   const [currentIndex, setCurrentIndex] = React.useState(0)
 
   React.useEffect(() => {
