@@ -185,62 +185,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* AIM Section */}
-      <section className="py-20 px-4 bg-card/30 backdrop-blur-sm border-y border-border/50">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Our <span className="text-secondary text-glow-blue">AIM</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              The goal of Microbiz is to firstly and foremost create small business owners through the provision of the following:
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Zap className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Business Equipment</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Giving Business Equipment and/or raw materials offered through starter kits to get you started immediately.
-              </p>
-            </Card>
-
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Users className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Practical Training</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Two-prong entrepreneurship training, firstly by mentors already running similar businesses and secondly by business financial literacy certified by Chinhoyi University of Technology School of Business and Entrepreneurship department.
-              </p>
-            </Card>
-
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-primary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <TrendingUp className="w-6 h-6 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Access to Credit</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Options of zero deposit fully funded and deposit paid (partially funded credit) to suit your financial situation.
-              </p>
-            </Card>
-
-            <Card className="p-8 bg-card/50 border-border/50 hover:border-secondary/50 transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Rocket className="w-6 h-6 text-secondary" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">Monitoring & Evaluation</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                After-sales service program where we conduct monthly site visits for the first 3 months to ensure teething problems are resolved early, ensuring business continuity and longevity.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* What's New Concept Section */}
       <section className="py-24 px-4 overflow-hidden relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10" />
