@@ -6,32 +6,32 @@ export function Footer() {
   return (
     <footer className="bg-secondary/20 backdrop-blur border-t border-secondary/30 mt-20 shadow-sm">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
-          <div>
-            <Link href="/" className="flex items-center justify-center mb-4 group">
-              <div className="relative w-64 h-20 flex items-center justify-center">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+            <Link href="/" className="flex items-center mb-4 group">
+              <div className="relative w-48 h-16 flex items-center justify-center">
                 <Image
                   src="/microbiz-logo.png"
                   alt="MicroBiz Zimbabwe"
-                  width={256}
-                  height={80}
+                  width={192}
+                  height={64}
                   className="object-contain brightness-[1.3] contrast-[1.1] transition-all duration-300 group-hover:brightness-[1.5] group-hover:contrast-[1.2]"
                 />
               </div>
             </Link>
-            <p className="text-sm text-muted-foreground leading-relaxed text-center">
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-[280px]">
               Empowering Zimbabwean entrepreneurs through innovative microfinancing solutions.
             </p>
-            <div className="flex items-center justify-center gap-4 mt-4">
+            <div className="flex items-center gap-4 mt-6">
               <a
                 href="https://www.facebook.com/profile.php?id=100064190430321"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group"
+                className="text-muted-foreground hover:text-primary transition-all flex items-center gap-2 group bg-secondary/10 px-4 py-2 rounded-full border border-secondary/20 hover:border-primary/30"
               >
-                <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                <span className="text-xs font-medium group-hover:text-primary transition-colors">Facebook</span>
+                <Facebook className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span className="text-xs font-bold uppercase tracking-wider group-hover:text-primary">Facebook</span>
               </a>
             </div>
           </div>

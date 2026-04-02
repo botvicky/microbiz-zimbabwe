@@ -12,9 +12,9 @@ export default function HomewarePage() {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 Premium <br />
-                <span className="text-primary text-glow-orange font-serif">Homeware & Electronics</span>
+                <span className="text-primary text-glow-orange font-serif">Homeware</span>
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
                 Elevate your living space with our curated selection of modern furniture, state-of-the-art electronics, and sustainable solar solutions.
@@ -47,7 +47,7 @@ export default function HomewarePage() {
       </section>
 
       {/* Featured Categories */}
-      <section className="px-4 py-20 bg-secondary/5">
+      <section className="px-6 py-20 bg-secondary/5">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 underline decoration-primary/50 underline-offset-8">Our Specialties</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -124,9 +124,9 @@ export default function HomewarePage() {
       </section>
 
       {/* Trust & Quality Section */}
-      <section className="px-4 py-24 relative">
+      <section className="px-6 py-12 md:py-24 relative">
         <div className="container mx-auto">
-          <div className="bg-card/40 backdrop-blur-2xl border border-primary/20 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-[0_0_50px_-12px_rgba(0,0,0,0.1)] group">
+          <div className="bg-card/40 backdrop-blur-2xl border border-primary/20 rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 text-center relative overflow-hidden shadow-[0_0_50px_-12px_rgba(0,0,0,0.1)] group">
             {/* Decorative Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-50">
               <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse" />
@@ -141,7 +141,7 @@ export default function HomewarePage() {
                 </div>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+              <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tight">
                 Quality You <span className="text-primary">Can Trust</span>
               </h2>
               

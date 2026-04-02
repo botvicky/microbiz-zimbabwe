@@ -42,7 +42,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section - Image-Oriented Split Design */}
-      <section className="relative pt-20 md:pt-32 pb-12 md:pb-20 px-4 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 px-6 overflow-hidden">
         {/* Background glow effects */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl glow-blue" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -53,7 +53,7 @@ export default function HomePage() {
             <div className="space-y-6 lg:pr-8">
 
 
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-balance leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-balance leading-tight">
               Start your business today!{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-primary to-secondary text-glow-blue">
                 Be your own boss.
@@ -103,7 +103,7 @@ export default function HomePage() {
             </div>
             
             {/* Right Image Grid */}
-            <div className="relative h-[500px] lg:h-[600px]">
+            <div className="relative h-[350px] sm:h-[450px] lg:h-[600px] mt-12 lg:mt-0">
               {/* Main featured image */}
               <div className="absolute top-0 right-0 w-[70%] h-[55%] rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/30 glow-orange group">
                 <Image
@@ -153,7 +153,7 @@ export default function HomePage() {
       </section>
 
       {/* What's New Concept Section */}
-      <section className="py-24 px-4 overflow-hidden relative">
+      <section className="py-20 px-6 overflow-hidden relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10" />
         
         <div className="container mx-auto relative z-10">
@@ -202,7 +202,7 @@ export default function HomePage() {
       </section>
 
       {/* Ngwavha like others - Hustles Showcase */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-20 px-6 relative overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent" />
         

@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, ChevronDown, GraduationCap, Building2, LayoutPanelLeft, Phone, Info } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,6 +12,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 
 export function Navigation() {
@@ -19,11 +26,11 @@ export function Navigation() {
   const pathname = usePathname()
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/what-we-do", label: "Small Business Projects" },
-    { href: "/homeware", label: "Homeware & Electronics" },
-    { href: "/products", label: "Business Booster Packages" },
-    { href: "/contact", label: "Contact Details" },
+    { href: "/", label: "Home", icon: LayoutPanelLeft },
+    { href: "/what-we-do", label: "Small Business Projects", icon: Building2 },
+    { href: "/homeware", label: "Homeware & Electronics", icon: GraduationCap },
+    { href: "/products", label: "Business Booster Packages", icon: Building2 },
+    { href: "/contact", label: "Contact Details", icon: Phone },
   ]
 
   const aboutLinks = [
@@ -99,60 +106,87 @@ export function Navigation() {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button asChild className="bg-primary hover:bg-primary/90 text-white">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20">
               <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
                 Apply Now
               </a>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground">
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Navigation with Sheet */}
+          <div className="md:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="text-foreground">
+                  <Menu className="w-6 h-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-card/95 backdrop-blur-xl border-l border-border/50 p-0">
+                <SheetHeader className="p-6 border-b border-border/50 bg-secondary/10">
+                  <SheetTitle className="text-left flex items-center gap-2">
+                    <Image src="/microbiz-logo.png" alt="Logo" width={100} height={30} className="object-contain brightness-110" />
+                  </SheetTitle>
+                </SheetHeader>
+                
+                <div className="flex flex-col h-[calc(100vh-80px)] overflow-y-auto p-4">
+                  <div className="space-y-1 mb-6">
+                    <p className="px-3 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] mb-2">Main Menu</p>
+                    {navLinks.map((link) => {
+                      const Icon = link.icon
+                      return (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          onClick={() => setIsOpen(false)}
+                          className={cn(
+                            "flex items-center gap-3 px-3 py-3 rounded-xl text-sm font-medium transition-all duration-200",
+                            isActive(link.href) 
+                              ? "bg-primary text-white shadow-lg shadow-primary/30 scale-[1.02]" 
+                              : "text-muted-foreground hover:bg-secondary/20 hover:text-foreground"
+                          )}
+                        >
+                          <Icon className={cn("w-5 h-5", isActive(link.href) ? "text-white" : "text-primary")} />
+                          {link.label}
+                        </Link>
+                      )
+                    })}
+                  </div>
+
+                  <div className="space-y-1 mb-6">
+                    <p className="px-3 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] mb-2">About MicroBiz</p>
+                    {aboutLinks.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setIsOpen(false)}
+                        className={cn(
+                          "flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all",
+                          isActive(link.href) 
+                            ? "text-primary bg-primary/5 font-bold" 
+                            : "text-muted-foreground hover:text-foreground hover:bg-secondary/10"
+                        )}
+                      >
+                        <div className={cn("w-1.5 h-1.5 rounded-full", isActive(link.href) ? "bg-primary" : "bg-border")} />
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+
+                  <div className="mt-auto p-2">
+                    <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white rounded-xl py-6 text-base font-bold shadow-xl shadow-primary/20">
+                      <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
+                        Apply for a Project
+                      </a>
+                    </Button>
+                    <p className="text-center text-[10px] text-muted-foreground mt-4 italic">
+                      Empowering Zimbabwe entrepreneurs
+                    </p>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden py-4 space-y-4 max-h-[80vh] overflow-y-auto">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "block text-sm font-medium transition-colors p-2 rounded-md",
-                  isActive(link.href) ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground hover:bg-secondary/10"
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-
-            <div className="pt-2 border-t border-border/50">
-              <p className="px-2 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">About Us</p>
-              {aboutLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "block text-sm font-medium transition-colors p-2 rounded-md ml-2",
-                    isActive(link.href) ? "text-primary font-bold" : "text-muted-foreground hover:text-foreground"
-                  )}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-
-            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white mt-4">
-              <a href="https://wa.me/263773988988?text=Hi" target="_blank" rel="noopener noreferrer">
-                Apply Now
-              </a>
-            </Button>
-          </div>
-        )}
       </div>
     </nav>
   )
