@@ -200,33 +200,33 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <ShoppingCart className="w-8 h-8 text-secondary" />
+          <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-5xl mx-auto">
+            <Card className="p-6 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <ShoppingCart className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Equipment Suppliers</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-lg font-bold mb-2">Equipment Suppliers</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Traditional suppliers simply provide goods and leave you to figure out the business process alone.
               </p>
             </Card>
 
-            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Briefcase className="w-8 h-8 text-secondary" />
+            <Card className="p-6 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Briefcase className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Business Consultancy</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-lg font-bold mb-2">Business Consultancy</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Typical consultancies offer advice on entrepreneurship but often lack the resources to get you started.
               </p>
             </Card>
 
-            <Card className="p-8 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Landmark className="w-8 h-8 text-secondary" />
+            <Card className="p-6 bg-card/50 backdrop-blur border-border/50 hover:border-primary/50 transition-all duration-300 flex flex-col items-center text-center group">
+              <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <Landmark className="w-6 h-6 text-secondary" />
               </div>
-              <h3 className="text-xl font-bold mb-4">Banks & Microfinanciers</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-lg font-bold mb-2">Banks & Microfinanciers</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Standard lenders provide capital but rarely offer the training or tools needed for business success.
               </p>
             </Card>
