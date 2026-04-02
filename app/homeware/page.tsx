@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { ShoppingCart, Tv, Lamp, Sun, Sofa, Shield, ArrowRight } from "lucide-react"
+import { ShoppingCart, Tv, Lamp, Sun, Sofa, Shield, ArrowRight, CheckCheck, Award, Wrench } from "lucide-react"
 
 export default function HomewarePage() {
   return (
@@ -124,27 +124,58 @@ export default function HomewarePage() {
       </section>
 
       {/* Trust & Quality Section */}
-      <section className="px-4 py-20">
+      <section className="px-4 py-24 relative">
         <div className="container mx-auto">
-          <div className="bg-gradient-to-br from-primary/10 via-primary/5 to-secondary/10 border border-primary/20 rounded-3xl p-12 text-center relative overflow-hidden">
-            <div className="relative z-10 max-w-3xl mx-auto">
-              <Shield className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Quality You Can Trust</h2>
-              <p className="text-xl text-muted-foreground italic leading-relaxed mb-8">
-                "We don't just sell products; we provide lifestyle solutions. Every piece in our collection is selected for its durability, design, and ability to transform a house into a home."
-              </p>
-              <div className="flex flex-wrap justify-center gap-8">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-foreground">Verified</div>
-                  <div className="text-sm text-muted-foreground">Quality Brands</div>
+          <div className="bg-card/40 backdrop-blur-2xl border border-primary/20 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-[0_0_50px_-12px_rgba(0,0,0,0.1)] group">
+            {/* Decorative Background Elements */}
+            <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-50">
+              <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-pulse" />
+              <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] animate-pulse" />
+            </div>
+
+            <div className="relative z-10 max-w-4xl mx-auto">
+              <div className="relative inline-block mb-8">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+                <div className="relative w-20 h-20 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center shadow-lg transform group-hover:rotate-6 transition-transform duration-500">
+                  <Shield className="w-10 h-10 text-white" />
                 </div>
-                <div className="text-center border-l border-r border-border px-8">
-                  <div className="text-2xl font-bold text-foreground">Guaranteed</div>
-                  <div className="text-sm text-muted-foreground">Manufacturer Warranty</div>
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+                Quality You <span className="text-primary">Can Trust</span>
+              </h2>
+              
+              <div className="relative px-8 py-10 mb-12 rounded-2xl bg-primary/5 border border-primary/10">
+                <span className="absolute top-4 left-6 text-6xl text-primary/20 font-serif leading-none">"</span>
+                <p className="text-xl md:text-2xl text-muted-foreground italic leading-relaxed font-serif relative z-10">
+                  We don&apos;t just sell products; we provide lifestyle solutions. Every piece in our collection is selected for its durability, design, and ability to transform a house into a home.
+                </p>
+                <span className="absolute bottom-4 right-6 text-6xl text-primary/20 font-serif leading-none">"</span>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-12 pt-8">
+                <div className="flex flex-col items-center group/item">
+                  <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-4 group-hover/item:scale-110 group-hover/item:bg-secondary/20 transition-all">
+                    <CheckCheck className="w-7 h-7 text-secondary" />
+                  </div>
+                  <div className="text-xl font-bold text-foreground mb-1">Verified</div>
+                  <div className="text-sm text-muted-foreground font-medium uppercase tracking-widest">Quality Brands</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-foreground">Expert</div>
-                  <div className="text-sm text-muted-foreground">Installation Services</div>
+
+                <div className="flex flex-col items-center group/item border-y md:border-y-0 md:border-x border-border/50 py-8 md:py-0 px-8">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover/item:scale-110 group-hover/item:bg-primary/20 transition-all">
+                    <Award className="w-7 h-7 text-primary" />
+                  </div>
+                  <div className="text-xl font-bold text-foreground mb-1">Guaranteed</div>
+                  <div className="text-sm text-muted-foreground font-medium uppercase tracking-widest">Manufacturer Warranty</div>
+                </div>
+
+                <div className="flex flex-col items-center group/item">
+                  <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-4 group-hover/item:scale-110 group-hover/item:bg-secondary/20 transition-all">
+                    <Wrench className="w-7 h-7 text-secondary" />
+                  </div>
+                  <div className="text-xl font-bold text-foreground mb-1">Expert</div>
+                  <div className="text-sm text-muted-foreground font-medium uppercase tracking-widest">Installation Services</div>
                 </div>
               </div>
             </div>
